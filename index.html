@@ -299,7 +299,15 @@
       </div>
       <p class="footer__copy">Made With ❤️ By Saqib</p>
     </footer>
-
+    <script>
+      let docTitle = document.title;
+      windo.addEventListner("blur", () =>{
+        document.title = "Come Back 😔";
+      })
+      window.addEventListner("focus", () =>{
+        document.title = docTitle;
+      })
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
   </body>
