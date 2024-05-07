@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawwqib</title>
+    <link rel="icon" type="image/x-icon" href="hero.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MonoLisa&display=swap" rel="stylesheet">
+
+    <style>
+
+         @font-face {
+        font-family: 'Noto Nastaliq Urdu';
+        src: url('https://fonts.gstatic.com/ea/notonastaliqurdu/v4/NotoNastaliqUrdu-Regular.woff2') format('woff2'),
+        url('https://fonts.gstatic.com/ea/notonastaliqurdu/v4/NotoNastaliqUrdu-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'MonoLisa', monospace;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 15px 5px;
+            text-align: left;
+            z-index: 1000;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+        }
+
+        .circle-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 40px;
+            float: left;
+        }
+
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            overflow: hidden;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            margin-right: 40px;
+        }
+
+        .box-text {
+            flex: 1;
+        }
+
+        footer {
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #4CAF50;
+}
+.social-icons {
+    display: flex;
+}
+
+.icon-link {
+    margin-right: 15px;
+    color: #555;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #4CAF50;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sawwqib</h1>
+    </header>
+
+    <div class="container">
+        <div class="section" id="about">
+            <div class="circle-image">
+                <img src="hero.jpg" alt="Circle Image">
+            </div>
+            <div class="text">
+                <h2>About Me</h2>
+                <br>
+                <p>A Front-end Developer with hands on experience of designing, developing and maintaining web. </p>
+                <br>
+                <a href="Resume.pdf"><button>Resume</button></a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <hr>
+            <h2>Works</h2>
+            <hr>
+        <div class="box">
+            <img src="1.jpg" alt="Square Image">
+            <div class="box-text">
+                <h2>Quranic Aura</h2>
+                <p>Get Quran Verse By Mood</p>
+                <a href="https://quranicaura.vercel.app"><button>Visit</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="2.jpeg" alt="Square Image">
+            <div class="box-text">
+                <h2>App Peak</h2>
+                <p>App Store</p>
+                <a href="https://apppeak.vercel.app"><button>Visit</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="3.jpeg" alt="Square Image">
+            <div class="box-text">
+                <h2>Hadith Generator</h2>
+                <p>Get Any Hadith</p>
+                <a href="https://hadithgenerator.vercel.app"><button>Visit</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="4.png" alt="Square Image">
+            <div class="box-text">
+                <h2>Text To Handwritting</h2>
+                <p>Convert Text To Handwritting</p>
+                <a href="https://text-to-handwritting.vercel.app"><button>Visit</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="5.png" alt="Square Image">
+            <div class="box-text">
+                <h2>Poems</h2>
+                <p>Poems By Hz Ali (RA)</p>
+                <a href="https://poemsbyali.vercel.app"><button>Visit</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="6.png" alt="Square Image">
+            <div class="box-text">
+                <h2>Gym Guru</h2>
+                <p>Workout And More</p>
+                <a href="https://gymguru.vercel.app"><button>Visit</button></a>
+            </div>
+        </div>
+        <hr>
+        <h2>Follow Me</h2>
+        <hr>
+        <div class="social-icons">
+            <a href="https://facebook.com/sawwqib" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/s.aww.qib" class="icon-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/sawwqib" class="icon-link"><i class="fab fa-github"></i></a>
+        </div>
+        <hr>
+        <h2>Contact Me</h2>
+        <hr>
+        <div class="section" id="contact">
+            <form
+                action="https://formspree.io/f/xnqewygz"
+                method="POST"
+              >
+                <label>
+                  Your Email:
+                  <input type="email" name="email">
+                </label>
+                <label>
+                  Your Message:
+                  <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+              </form>
+        </div>
+    </div>
+
+    <footer>
+        Made With &hearts; by SAQIB
+    </footer>
+</body>
+</html>
