@@ -1,313 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4222464502597261"
-     crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-4222464502597261">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="qvz1depI77nnWiiU_G71VyH080s05ws-Y_ON2W7h3QU"
-    />
-    <link
-      rel="shortcut icon"
-      href="/assets/img/about.jpg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Saqib</title>
-  </head>
-  <body>
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#home" class="nav__logo">Saqib</a>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=MonoLisa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-L8VcIUVNrQgJDTvgaqojWRdksplYrjG8qm8pSiC14BhKwdPyK04X0F2XZ3Mhq3R8TmiPXbwfL2W8Px3v1gkTuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
+    <link rel="icon" type="image/x-icon" href="/assets/hero.jpg">
+    <title>My Portfolio</title>
+    <style>
+
+        @font-face {
+        font-family: 'Noto Nastaliq Urdu';
+        src: url('https://fonts.gstatic.com/ea/notonastaliqurdu/v4/NotoNastaliqUrdu-Regular.woff2') format('woff2'),
+        url('https://fonts.gstatic.com/ea/notonastaliqurdu/v4/NotoNastaliqUrdu-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: 'MonoLisa', monospace;
+        }
+
+        header {
+            background-color: black;
+            color: yellowgreen;
+            padding: 1px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: rgb(31, 31, 31);
+            color: yellowgreen;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav button {
+            color: yellowgreen;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Portfolio Item Styles */
+        .portfolio-item {
+            background-color: rgb(31, 31, 31);
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item h3 {
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: yellowgreen;
+        }
+
+        .portfolio-item p {
+            margin-bottom: 0;
+            color: yellow;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Welcome Section Styles */
+        #welcome {
+            display: flex;
+            align-items: center;
+        }
+        form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: yellowgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+}
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: yellowgreen;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sawwqib</h1>
     </header>
 
-    <main class="l-main">
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Saqib</span><br />
-            Web Developer
-          </h1>
-          <a href="#contact" class="button">Contact Me</a>
-        </div>
-        <div class="home__social">
-          <a href="https://instagram.com/s.aww.qib" class="home__social-icon"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://t.me/sawwqib" class="home__social-icon"
-            ><i class="bx bxl-telegram"></i
-          ></a>
-        </div>
-        <div class="home__img">
-          <svg
-            class="home__blob"
-            viewBox="0 0 479 467"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <mask id="mask0" mask-type="alpha">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-            </mask>
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-              <image
-                class="home__blob-img"
-                x="50"
-                y="60"
-                href="assets/img/about.jpg"
-              />
-            </g>
-          </svg>
-        </div>
-      </section>
+    <nav>
+        <button onclick="scrollToSection('#home')">Home</button>
+        <button onclick="scrollToSection('#about')">About</button>
+        <button onclick="scrollToSection('#projects')">Projects</button>
+        <button onclick="scrollToSection('#contact')">Contact</button>
+    </nav>
 
-      <section class="about section" id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/about.jpg" alt="" />
-          </div>
-          <div>
-            <h2 class="about__subtitle">I'am Saqib</h2>
-            <p class="about__text">
-              a passionate web developer. With expertise in frontend, I create
-              seamless digital experiences that captivate and engage users.
-              Let's build something amazing together!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text"></p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML5</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <span class="skills__percentage">95%</span>
-              </div>
+    <div class="container">
+        <section id="home" class="portfolio-item">
+            <div id="welcome">
+                <div>
+                    <h3>Hello.</h3>
+                    <p>Welcome to my portfolio! Here you can learn more about me and my work.</p>
+                </div>
             </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS3</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
+        </section>
+
+        <section id="about" class="portfolio-item">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com/sawwqib"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/sawwqib"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/s.aww.qib"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JavaScript</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-              <div>
-                <span class="skills__percentage">35%</span>
-              </div>
+        </section>
+
+        <section id="projects" class="portfolio-item">
+            <h3>Projects</h3>
+            <div class="project">
+                    <p>Quranic Aura</p>
+                <a href="https://quranicaura.vercel.app"><img src="assets/1.jpg" alt="Project 1"></a>
+
             </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">UX/UI</span>
-              </div>
-              <div class="skills__bar skills__ux"></div>
-              <div>
-                <span class="skills__percentage">20%</span>
-              </div>
+            <div class="project">
+                    <p>App Peak</p>
+                <a href="https://apppeak.vercel.app"> <img src="assets/2.jpeg" alt="Project 2"></a>
+                
             </div>
-          </div>
-          <div>
-            <img src="assets/img/skill.jpg" alt="" class="skills__img" />
-          </div>
-        </div>
-      </section>
+            <div class="project">
+                    <p>Hadith Generator</p>
+                <a href="https://hadithgenerator.vercel.app"> <img src="assets/3.jpeg" alt="Project 3"></a>
+                
+            </div>
+            <div class="project">
+                    <p>Text To Hand Writting</p>
+                <a href="https://text-to-handwritting.vercel.app"><img src="assets/4.png" alt="Project 4"></a>
+                
+            </div>
+            <div class="project">
+                    <p>Poems By Hz Ali (RA)</p>
+                <a href="https://poemsbyali.vercel.app"><img src="assets/5.png" alt="Project 5"></a>
+                
+            </div>
+            <div class="project">
+                    <p>Gym Guru</p>
+                <a href="https://gymguru.vercel.app"><img src="assets/6.png" alt="Project 6"></a>
+                
+            </div>
+        </section>
 
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
-        <div class="work__container bd-grid">
+        <section id="contact" class="portfolio-item">
+            <h3>Contact</h3>
+                <form
+                action="https://formspree.io/f/xnqewygz"
+                method="POST"
+              >
+                <label>
+                  Your email:
+                  <input type="email" name="email">
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+              </form>
+        </section>
+    </div>
 
-          <a href="https://quranicaura.vercel.app" class="work__img">
-            <img src="assets/img/work3.jpg" alt="Quranic Aura" />
-          </a>
-
-          <a href="https://apppeak.vercel.app" class="work__img">
-            <img src="assets/img/work4.jpeg" alt="App Peak" />
-          </a>
-
-          <a href="https://hadithgenerator.vercel.app" class="work__img">
-            <img src="assets/img/work6.jpeg" alt="Hadith Generator" />
-          </a>
-
-          <a href="https://text-to-handwritting.vercel.app" class="work__img">
-            <img src="assets/img/work7.png" alt="Text To Handwritting" />
-          </a>
-
-          <a href="https://poemsbyali.vercel.app" class="work__img">
-            <img src="assets/img/work8.png" alt="Poems By Hz Ali ra" />
-          </a>
-          <a href="https://gym0.vercel.app" class="work__img">
-            <img src="assets/img/work9.png" alt="gym" />
-          </a>
-          
-        </div>
-      </section>
-
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact__container bd-grid">
-          <form
-            action="https://formspree.io/f/mvoekgbw"
-            method="POST"
-            class="contact__form"
-          >
-            <label class="contact__label">
-              Your Email:
-              <input type="email" name="email" class="contact__input" />
-            </label>
-            <label class="contact__label">
-              Your Message:
-              <textarea name="message" class="contact__input"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit" class="contact__button button">Send</button>
-          </form>
-        </div>
-      </section>
-
-      <style>
-        /* Style the contact section */
-        .contact {
-          background-color: #f2f2f2;
-          padding: 50px;
-          text-align: center;
-        }
-
-        /* Style the heading */
-        .section-title {
-          font-size: 2em;
-          margin-bottom: 20px;
-        }
-
-        /* Style the container */
-        .contact__container {
-          display: flex;
-          justify-content: center;
-        }
-
-        /* Style the form */
-        .contact__form {
-          width: 300px;
-          padding: 20px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-        }
-
-        /* Style the labels (if you want them) */
-        .contact__label {
-          display: block;
-          margin-bottom: 5px;
-          font-weight: bold;
-        }
-
-        /* Style the input fields */
-        .contact__input {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 3px;
-          margin-bottom: 15px;
-        }
-
-        /* Style the text area */
-        .contact__input[type="textarea"] {
-          height: 100px;
-        }
-
-        /* Style the button */
-        .contact__button {
-          background-color: 3e6FF4;
-          color: white;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-
-        /* Style the button on hover */
-        .contact__button:hover {
-          background-color: 3e6FF4;
-        }
-      </style>
-    </main>
-
-    <footer class="footer">
-      <p class="footer__title">Saqib</p>
-      <div class="footer__social">
-        <a href="https://t.me/sawwqib" class="footer__icon"
-          ><i class="bx bxl-telegram"></i
-        ></a>
-        <a href="https://instagram.com/s.aww.qib" class="footer__icon"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-      </div>
-      <p class="footer__copy">Made With ❤️ By Saqib</p>
+    <footer>
+        Created With ❤️ By SAQIB
     </footer>
+
     <script>
-     let docTitle = document.title;
-      window.addEventListener("blur", () => {
-        document.title = "Come Back 😔";
-      });
-      window.addEventListener("focus", () => {
-        document.title = docTitle;
-      });
+        function scrollToSection(sectionId) {
+            var section = document.querySelector(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+
+</body>
 </html>
