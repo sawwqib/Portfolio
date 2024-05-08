@@ -7,8 +7,17 @@
     <link rel="icon" type="image/x-icon" href="hero.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MonoLisa&display=swap" rel="stylesheet">
 
     <style>
+
+         @font-face {
+        font-family: 'Noto Nastaliq Urdu';
+        src: url('https://fonts.gstatic.com/ea/notonastaliqurdu/v4/NotoNastaliqUrdu-Regular.woff2') format('woff2'),
+        url('https://fonts.gstatic.com/ea/notonastaliqurdu/v4/NotoNastaliqUrdu-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
 
         * {
             margin: 0;
@@ -20,6 +29,7 @@
             font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
             color: #333;
+            font-family: 'MonoLisa', monospace;
         }
 
         header {
@@ -55,8 +65,8 @@
         }
 
         .circle-image {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
             margin-right: 40px;
@@ -98,6 +108,7 @@
 
         .box-text {
             flex: 1;
+            font-size: 15px;
         }
 
         footer {
@@ -133,7 +144,7 @@
         form {
   max-width: 400px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'MonoLisa', monospace;
 }
 
 label {
@@ -159,6 +170,7 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'MonoLisa', monospace;
 }
 
 button[type="submit"]:hover {
@@ -191,6 +203,7 @@ button[type="submit"]:hover {
             <div class="circle-image">
                 <img src="hero.jpg" alt="Circle Image">
             </div>
+            <br>
             <div class="text">
                 <h2>About Me</h2>
                 <br>
