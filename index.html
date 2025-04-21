@@ -693,6 +693,42 @@
             contactForm.style.display = 'block';
             successMessage.style.display = 'none';
         }
+        // Disable text selection
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+        document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+});
+        // Disable drag events (like dragging images)
+document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+});
+        // Optional: Block specific key combos (like Ctrl+U, Ctrl+S, F12, etc.)
+document.addEventListener('keydown', function(e) {
+    if (
+        (e.ctrlKey && ['u', 's', 'c'].includes(e.key.toLowerCase())) || // View source, save, copy
+        e.key === 'F12' || // Dev tools
+        (e.ctrlKey && e.shiftKey && ['i', 'j'].includes(e.key.toLowerCase())) // Inspect/console
+    ) {
+        e.preventDefault();
+    }
+});
+        (function detectDevTools() {
+    const devtools = new Image();
+    Object.defineProperty(devtools, 'id', {
+        get: function() {
+            document.body.innerHTML = '<h1>Nice try, Inspector Gadget 👀</h1>';
+        }
+    });
+    console.log('%c', devtools);
+})();
+['copy', 'cut', 'paste'].forEach(evt =>
+    document.addEventListener(evt, function(e) {
+        e.preventDefault();
+    })
+);
+
     </script>
 </body>
 </html>
